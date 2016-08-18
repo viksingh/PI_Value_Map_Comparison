@@ -1,0 +1,51 @@
+package org.saki.urlcompare;
+
+public class ValueMapData {
+	
+	String SID;
+	String Group_ID;
+	String description;
+	String scheme;
+	String agency;
+	String value;
+	public String getSID() {
+		return SID;
+	}
+	public void setSID(String sID) {
+		SID = sID;
+	}
+	public String getGroup_ID() {
+		return Group_ID;
+	}
+	public void setGroup_ID(String groupID) {
+		Group_ID = groupID;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getScheme() {
+		return scheme;
+	}
+	public void setScheme(String scheme) {
+		this.scheme = scheme;
+	}
+	public String getAgency() {
+		return agency;
+	}
+	public void setAgency(String agency) {
+		this.agency = agency;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+	
+	
+	
+
+}

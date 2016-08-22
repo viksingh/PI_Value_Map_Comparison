@@ -95,7 +95,7 @@ public class ValueMapsCompare {
 		
 		
 
-        String valueMap_file_E1Q = "C:\\Temp\\E1Q_VALUE_MAPS6.txt";
+        String valueMap_file_E1Q = "C:\\Temp\\E1Q_VALUE_MAPS8.txt";
         String line_E1Q = "";        
         BufferedReader br_E1Q = null;
         ArrayList<ValueMapData>  value_maps_E1Q_list = new ArrayList<ValueMapData>();

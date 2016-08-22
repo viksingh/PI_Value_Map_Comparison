@@ -13,6 +13,7 @@ public class ValueMapsCompare {
 	 */
 	
 	static String fileSplitBy = "\\|";
+	static String fileSeparator = "|";
 	 
 	public static void main(String[] args) {        
         
@@ -82,7 +83,7 @@ public class ValueMapsCompare {
 		
 		
 
-        String valueMap_file_E1Q = "C:\\Temp\\E1Q_VALUE_MAPS.txt";
+        String valueMap_file_E1Q = "C:\\Temp\\E1Q_VALUE_MAPS8.txt";
         String line_E1Q = "";        
         BufferedReader br_E1Q = null;
         ArrayList<ValueMapData>  value_maps_E1Q_list = new ArrayList<ValueMapData>();
@@ -126,8 +127,8 @@ public class ValueMapsCompare {
 					&& value_map_XI70_ind.scheme.equals(value_map_PI74_ind.scheme )
 					&& value_map_XI70_ind.value.equals(value_map_PI74_ind.value )) {
 
-					System.out.println(" Match Found " + ","+  value_map_XI70_ind.agency +
-							","+value_map_XI70_ind.scheme + ","+value_map_XI70_ind.value );
+					System.out.println(" Match Found " + fileSeparator+  value_map_XI70_ind.Group_ID + fileSeparator+  value_map_XI70_ind.agency +
+							fileSeparator+value_map_XI70_ind.scheme + fileSeparator+value_map_XI70_ind.value );
 					
 					flag_found = true;
 					break;
@@ -138,8 +139,8 @@ public class ValueMapsCompare {
 			}			
 			
 			if (!flag_found)
-			System.out.println(" No Match Found " + ","+  value_map_XI70_ind.agency +
-					","+value_map_XI70_ind.scheme + ","+value_map_XI70_ind.value );
+			System.out.println(" No Match Found " + fileSeparator+  value_map_XI70_ind.Group_ID + fileSeparator+  value_map_XI70_ind.agency +
+					fileSeparator+value_map_XI70_ind.scheme + fileSeparator+value_map_XI70_ind.value );
 						}
 			
 		}
